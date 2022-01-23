@@ -124,10 +124,43 @@ def save_game_result(team_1, team_2, team_1_score, team_2_score, team_1_penaltie
                         game['winner'] = team_2
         if found_winner:
             print(f"Winner of the {stage} between {team_1} and {team_2} is {game['winner']}")
+    
+    promote_stage_teams(tournament)
 
     wf = open('tt.json', 'w')
     json.dump(tournament, wf, indent=4)
     print("Game result recorded.")
+
+def promote_stage_teams(t):
+    rs1_winner = t['Final']['SF1']['QF1']['RS1']['score']['winner']
+    rs2_winner = t['Final']['SF1']['QF1']['RS2']['score']['winner']
+    t['Final']['SF1']['QF1']['score']['teams'] = [rs1_winner, rs2_winner]
+
+    rs3_winner = t['Final']['SF1']['QF2']['RS3']['score']['winner']
+    rs4_winner = t['Final']['SF1']['QF2']['RS4']['score']['winner']
+    t['Final']['SF1']['QF2']['score']['teams'] = [rs3_winner, rs4_winner]
+
+    rs5_winner = t['Final']['SF2']['QF3']['RS5']['score']['winner']
+    rs6_winner = t['Final']['SF2']['QF3']['RS6']['score']['winner']
+    t['Final']['SF2']['QF3']['score']['teams'] = [rs5_winner, rs6_winner]
+
+    rs7_winner = t['Final']['SF2']['QF4']['RS7']['score']['winner']
+    rs8_winner = t['Final']['SF2']['QF4']['RS8']['score']['winner']
+    t['Final']['SF2']['QF4']['score']['teams'] = [rs7_winner, rs8_winner]
+
+    qf1_winner = t['Final']['SF1']['QF1']['score']['winner']
+    qf2_winner = t['Final']['SF1']['QF2']['score']['winner']
+    qf3_winner = t['Final']['SF2']['QF3']['score']['winner']
+    qf4_winner = t['Final']['SF2']['QF4']['score']['winner']
+    t['Final']['SF1']['score']['teams'] = [qf1_winner, qf2_winner]
+    t['Final']['SF2']['score']['teams'] = [qf3_winner, qf4_winner]
+
+    sf1_winner = t['Final']['SF1']['score']['winner']
+    sf2_winner = t['Final']['SF2']['score']['winner']
+    t['Final']['score']['teams'] = [sf1_winner, sf2_winner]
+
+
+
 
 # Record result format "DOR v POR = 3-3 (3-5)"
 def record_result():

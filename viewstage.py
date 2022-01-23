@@ -7,6 +7,15 @@ class Stages(enum.Enum):
     QF = 2
     SF = 3
     Final = 4
+    def __str__(self):
+        if self.value == 1:
+            return "Round of 16"
+        if self.value == 2: 
+            return "Quarter-finals"
+        if self.value == 3:
+            return "Semi-finals"
+        if self.value == 4:
+            return "Final"
 
 
 def find_current_stage(t):
@@ -46,16 +55,22 @@ def print_score(score):
         print(f"\n{score['teams'][0]} v {score['teams'][1]}")
         if score['L1']['finished']:
             print(f"Leg 1 : {score['L1']['result']['goals']}")
-        if score['L2']['finished']:
+        if 'L2' in score and score['L2']['finished']:
             if score['L2']['result']['penalties'] != "":
                 print(f"Leg 2 : {score['L2']['result']['goals']} ({score['L2']['result']['penalties']})")
             else:
                 print(f"Leg 2 : {score['L2']['result']['goals']}")
 
-    if score['L1']['finished'] and score['L2']['finished']:
-        print(f"Winner :: {score['winner']}")
+    if 'L2' in score:
+        if score['L1']['finished'] and score['L2']['finished']:
+            print(f"Winner :: {score['winner']}")
+        else:
+            print("Winner :: TBD")
     else:
-        print("Winner :: TBD")
+        if score['L1']['finished']:
+            print(f"Winner :: {score['winner']}")
+        else:
+            print("Winner :: TBD")
 
 
 def print_stage(t, stage):

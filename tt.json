@@ -2,7 +2,10 @@
     "Final": {
         "score": {
             "winner": "TBD",
-            "teams": [],
+            "teams": [
+                "TBD",
+                "TBD"
+            ],
             "L1": {
                 "finished": false,
                 "result": {
@@ -14,7 +17,10 @@
         "SF1": {
             "score": {
                 "winner": "TBD",
-                "teams": [],
+                "teams": [
+                    "TBD",
+                    "TBD"
+                ],
                 "L1": {
                     "finished": false,
                     "result": {
@@ -33,7 +39,10 @@
             "QF1": {
                 "score": {
                     "winner": "TBD",
-                    "teams": [],
+                    "teams": [
+                        "TBD",
+                        "TBD"
+                    ],
                     "L1": {
                         "finished": false,
                         "result": {
@@ -99,7 +108,10 @@
             "QF2": {
                 "score": {
                     "winner": "TBD",
-                    "teams": [],
+                    "teams": [
+                        "TBD",
+                        "TBD"
+                    ],
                     "L1": {
                         "finished": false,
                         "result": {
@@ -166,7 +178,10 @@
         "SF2": {
             "score": {
                 "winner": "TBD",
-                "teams": [],
+                "teams": [
+                    "TBD",
+                    "TBD"
+                ],
                 "L1": {
                     "finished": false,
                     "result": {
@@ -185,7 +200,10 @@
             "QF3": {
                 "score": {
                     "winner": "TBD",
-                    "teams": [],
+                    "teams": [
+                        "TBD",
+                        "TBD"
+                    ],
                     "L1": {
                         "finished": false,
                         "result": {
@@ -251,7 +269,10 @@
             "QF4": {
                 "score": {
                     "winner": "TBD",
-                    "teams": [],
+                    "teams": [
+                        "TBD",
+                        "POR"
+                    ],
                     "L1": {
                         "finished": false,
                         "result": {
