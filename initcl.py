@@ -4,39 +4,42 @@ import random
 
 
 def new_tournament():
-    print("Initializing Tournament")
-    f = open('teams.json')
-    teams_loaded = json.load(f)
-    teams = teams_loaded['teams']
-    pprint.pprint(teams)
-    print(f"Total teams loaded {len(teams)}")
-    random.shuffle(teams)
-    pprint.pprint(teams)
+    ans = input("Current tournament will be erased\nDo you want to continue ? ")
+    if ans.lower() == 'y' or ans.lower() == "yes":
+      print("Initializing Tournament")
+      f = open('teams.json')
+      teams_loaded = json.load(f)
+      teams = teams_loaded['teams']
+      pprint.pprint(teams)
+      print(f"Total teams loaded {len(teams)}")
+      random.shuffle(teams)
+      pprint.pprint(teams)
 
-    tt = build_empty_data()
-    # teams[0], teams[1] should be assigned to rs1
-    tt['Final']['SF1']['QF1']['RS1']['score']['teams'] = [teams[0], teams[1]]
-    # teams[2], teams[3] should be assigned to rs2
-    tt['Final']['SF1']['QF1']['RS2']['score']['teams'] = [teams[2], teams[3]]
-    # teams[4], teams[5] should be assigned to rs3
-    tt['Final']['SF1']['QF2']['RS3']['score']['teams'] = [teams[4], teams[5]]
-    # teams[6], teams[7] should be assigned to rs4
-    tt['Final']['SF1']['QF2']['RS4']['score']['teams'] = [teams[6], teams[7]]
+      tt = build_empty_data()
+      # teams[0], teams[1] should be assigned to rs1
+      tt['Final']['SF1']['QF1']['RS1']['score']['teams'] = [teams[0], teams[1]]
+      # teams[2], teams[3] should be assigned to rs2
+      tt['Final']['SF1']['QF1']['RS2']['score']['teams'] = [teams[2], teams[3]]
+      # teams[4], teams[5] should be assigned to rs3
+      tt['Final']['SF1']['QF2']['RS3']['score']['teams'] = [teams[4], teams[5]]
+      # teams[6], teams[7] should be assigned to rs4
+      tt['Final']['SF1']['QF2']['RS4']['score']['teams'] = [teams[6], teams[7]]
 
-    # Remaining teams
-    tt['Final']['SF2']['QF3']['RS5']['score']['teams'] = [teams[8], teams[9]]
-    tt['Final']['SF2']['QF3']['RS6']['score']['teams'] = [teams[10], teams[11]]
-    tt['Final']['SF2']['QF4']['RS7']['score']['teams'] = [teams[12], teams[13]]
-    tt['Final']['SF2']['QF4']['RS8']['score']['teams'] = [teams[14], teams[15]]
+      # Remaining teams
+      tt['Final']['SF2']['QF3']['RS5']['score']['teams'] = [teams[8], teams[9]]
+      tt['Final']['SF2']['QF3']['RS6']['score']['teams'] = [teams[10], teams[11]]
+      tt['Final']['SF2']['QF4']['RS7']['score']['teams'] = [teams[12], teams[13]]
+      tt['Final']['SF2']['QF4']['RS8']['score']['teams'] = [teams[14], teams[15]]
 
-    pprint.pprint(tt)
+      pprint.pprint(tt)
 
-    # save tournament structure
-    wf = open('tt.json', 'w')
-    json.dump(tt, wf, indent=4)
+      # save tournament structure
+      wf = open('tt.json', 'w')
+      json.dump(tt, wf, indent=4)
 
-    print("New tournament saved to tt.json")
-
+      print("New tournament saved to tt.json")
+    else:
+      print("Skipping new tournament creation.")
 
 
 def build_leg():
