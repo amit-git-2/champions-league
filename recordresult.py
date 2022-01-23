@@ -129,7 +129,7 @@ def save_game_result(team_1, team_2, team_1_score, team_2_score, team_1_penaltie
 
 # Record result format "DOR v POR = 3-3 (3-5)"
 def record_result():
-    score = input("Enter the score :: ")
+    score = input("Enter the game score :: ")
     if re.search(r"\(\d-\d\)", score) is not None:
         team_1, ignored_1, team_2, ignored_2, score_main, penalties = score.split(' ')
         team_1_score, team_2_score = score_main.split('-')
