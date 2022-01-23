@@ -33,7 +33,7 @@ def new_tournament():
 
     # save tournament structure
     wf = open('tt.json', 'w')
-    json.dump(tt, wf)
+    json.dump(tt, wf, indent=4)
 
     print("New tournament saved to tt.json")
 
