@@ -1,0 +1,75 @@
+{
+  "Final": {
+    "score": {
+      "winner": "TBD",
+      "teams": [],
+      "L1": {
+        "finished": false,
+        "result": {
+          "goals": "0-1",
+          "penalties": "0-0"
+        }
+      }
+    },
+    "SF1": {
+      "score": {
+        "winner": "",
+        "L1": {},
+        "L2": {}
+      },
+      "QF1": {
+        "score": {},
+        "RS1": {
+          "score": {}
+        },
+        "RS2": {
+          "score": {}
+        }
+      },
+      "QF2": {
+        "score": {},
+        "RS3": {
+          "score": {}
+        },
+        "RS4": {
+          "score": {}
+        }
+      }
+    },
+    "SF2": {
+      "score": {},
+      "QF3": {
+        "score": {},
+        "RS5": {
+          "score": {}
+        },
+        "RS6": {
+          "score": {}
+        }
+      },
+      "QF4": {
+        "score": {},
+        "RS7": {
+          "score": {}
+        },
+        "RS8": {
+          "score": {
+            "winner": "TBD",
+            "teams": [
+              "MCI",
+              "BAY"
+            ],
+            "L1": {
+              "finished": false,
+              "result": {
+                "goals": "0-1",
+                "penalties": "0-0"
+              }
+            },
+            "L2": {}
+          }
+        }
+      }
+    }
+  }
+}

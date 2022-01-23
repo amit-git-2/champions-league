@@ -1,0 +1,319 @@
+{
+    "Final": {
+        "score": {
+            "winner": "TBD",
+            "teams": [],
+            "L1": {
+                "finished": false,
+                "result": {
+                    "goals": "",
+                    "penalties": ""
+                }
+            }
+        },
+        "SF1": {
+            "score": {
+                "winner": "TBD",
+                "teams": [],
+                "L1": {
+                    "finished": false,
+                    "result": {
+                        "goals": "",
+                        "penalties": ""
+                    }
+                },
+                "L2": {
+                    "finished": false,
+                    "result": {
+                        "goals": "",
+                        "penalties": ""
+                    }
+                }
+            },
+            "QF1": {
+                "score": {
+                    "winner": "TBD",
+                    "teams": [],
+                    "L1": {
+                        "finished": false,
+                        "result": {
+                            "goals": "",
+                            "penalties": ""
+                        }
+                    },
+                    "L2": {
+                        "finished": false,
+                        "result": {
+                            "goals": "",
+                            "penalties": ""
+                        }
+                    }
+                },
+                "RS1": {
+                    "score": {
+                        "winner": "TBD",
+                        "teams": [
+                            "ATM",
+                            "PSG"
+                        ],
+                        "L1": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        },
+                        "L2": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        }
+                    }
+                },
+                "RS2": {
+                    "score": {
+                        "winner": "TBD",
+                        "teams": [
+                            "NAP",
+                            "BAY"
+                        ],
+                        "L1": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        },
+                        "L2": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        }
+                    }
+                }
+            },
+            "QF2": {
+                "score": {
+                    "winner": "TBD",
+                    "teams": [],
+                    "L1": {
+                        "finished": false,
+                        "result": {
+                            "goals": "",
+                            "penalties": ""
+                        }
+                    },
+                    "L2": {
+                        "finished": false,
+                        "result": {
+                            "goals": "",
+                            "penalties": ""
+                        }
+                    }
+                },
+                "RS3": {
+                    "score": {
+                        "winner": "TBD",
+                        "teams": [
+                            "MCI",
+                            "RMA"
+                        ],
+                        "L1": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        },
+                        "L2": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        }
+                    }
+                },
+                "RS4": {
+                    "score": {
+                        "winner": "TBD",
+                        "teams": [
+                            "AJA",
+                            "JUV"
+                        ],
+                        "L1": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        },
+                        "L2": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "SF2": {
+            "score": {
+                "winner": "TBD",
+                "teams": [],
+                "L1": {
+                    "finished": false,
+                    "result": {
+                        "goals": "",
+                        "penalties": ""
+                    }
+                },
+                "L2": {
+                    "finished": false,
+                    "result": {
+                        "goals": "",
+                        "penalties": ""
+                    }
+                }
+            },
+            "QF3": {
+                "score": {
+                    "winner": "TBD",
+                    "teams": [],
+                    "L1": {
+                        "finished": false,
+                        "result": {
+                            "goals": "",
+                            "penalties": ""
+                        }
+                    },
+                    "L2": {
+                        "finished": false,
+                        "result": {
+                            "goals": "",
+                            "penalties": ""
+                        }
+                    }
+                },
+                "RS5": {
+                    "score": {
+                        "winner": "TBD",
+                        "teams": [
+                            "FCB",
+                            "MUN"
+                        ],
+                        "L1": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        },
+                        "L2": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        }
+                    }
+                },
+                "RS6": {
+                    "score": {
+                        "winner": "TBD",
+                        "teams": [
+                            "CHE",
+                            "INT"
+                        ],
+                        "L1": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        },
+                        "L2": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        }
+                    }
+                }
+            },
+            "QF4": {
+                "score": {
+                    "winner": "TBD",
+                    "teams": [],
+                    "L1": {
+                        "finished": false,
+                        "result": {
+                            "goals": "",
+                            "penalties": ""
+                        }
+                    },
+                    "L2": {
+                        "finished": false,
+                        "result": {
+                            "goals": "",
+                            "penalties": ""
+                        }
+                    }
+                },
+                "RS7": {
+                    "score": {
+                        "winner": "TBD",
+                        "teams": [
+                            "MIL",
+                            "LIV"
+                        ],
+                        "L1": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        },
+                        "L2": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        }
+                    }
+                },
+                "RS8": {
+                    "score": {
+                        "winner": "TBD",
+                        "teams": [
+                            "DOR",
+                            "POR"
+                        ],
+                        "L1": {
+                            "finished": true,
+                            "result": {
+                                "goals": "3-6",
+                                "penalties": ""
+                            }
+                        },
+                        "L2": {
+                            "finished": false,
+                            "result": {
+                                "goals": "",
+                                "penalties": ""
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
