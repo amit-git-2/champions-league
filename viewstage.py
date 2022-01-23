@@ -40,17 +40,22 @@ def find_current_stage(t):
 
 
 def print_score(score):
-    print(f"\n{score['teams'][0]} v {score['teams'][1]}")
-    if score['L1']['finished']:
-        print(f"Leg 1 : {score['L1']['result']['goals']}")
-    if score['L2']['finished']:
-        if score['L2']['result']['penalties'] != "":
-            print(f"Leg 2 : {score['L2']['result']['goals']} ({score['L2']['result']['penalties']})")
-        else:
-            print(f"Leg 2 : {score['L2']['result']['goals']}")
+    if len(score['teams']) == 0:
+        print(f"\nTBD v TBD")
+    else:
+        print(f"\n{score['teams'][0]} v {score['teams'][1]}")
+        if score['L1']['finished']:
+            print(f"Leg 1 : {score['L1']['result']['goals']}")
+        if score['L2']['finished']:
+            if score['L2']['result']['penalties'] != "":
+                print(f"Leg 2 : {score['L2']['result']['goals']} ({score['L2']['result']['penalties']})")
+            else:
+                print(f"Leg 2 : {score['L2']['result']['goals']}")
 
     if score['L1']['finished'] and score['L2']['finished']:
         print(f"Winner :: {score['winner']}")
+    else:
+        print("Winner :: TBD")
 
 
 def print_stage(t, stage):
@@ -88,3 +93,13 @@ def view_current_stage():
     # Print all the games in the target stage
     print_stage(tournament, current_stage)
     pass
+
+def view_all_stages():
+    # Read tt.json to load current state
+    f = open('tt.json')
+    tournament = json.load(f)
+
+    for st in Stages:
+        print(f"\n--------- {st} ----------------")
+        print_stage(tournament, st)
+

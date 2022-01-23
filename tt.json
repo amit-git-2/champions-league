@@ -292,7 +292,7 @@
                 },
                 "RS8": {
                     "score": {
-                        "winner": "TBD",
+                        "winner": "POR",
                         "teams": [
                             "DOR",
                             "POR"
@@ -305,9 +305,9 @@
                             }
                         },
                         "L2": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "6-4",
                                 "penalties": ""
                             }
                         }

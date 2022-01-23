@@ -1,7 +1,7 @@
 import re
 import json
 
-from viewcurrent import Stages
+from viewstage import Stages
 
 def find_game(t, team_1, team_2):
     # Check round of 16 teams
@@ -90,7 +90,7 @@ def save_game_result(team_1, team_2, team_1_score, team_2_score, team_1_penaltie
                 away_goals_t1 = goals_l2_t1
                 away_goals_t2 = goals_l1_t2
                 if away_goals_t1 == away_goals_t2:
-                    # check l2 penalties
+                    # check L2 penalties
                     pen_t1, pen_t2 = game['L2']['result']['penalties'].split('-')
                     if pen_t1 > pen_t2:
                         game['winner'] = team_1
@@ -122,10 +122,12 @@ def save_game_result(team_1, team_2, team_1_score, team_2_score, team_1_penaltie
                         game['winner'] = team_1
                     else:
                         game['winner'] = team_2
-        print(f"Game result recorded.")
         if found_winner:
             print(f"Winner of the {stage} between {team_1} and {team_2} is {game['winner']}")
 
+    wf = open('tt.json', 'w')
+    json.dump(tournament, wf)
+    print("Game result recorded.")
 
 # Record result format "DOR v POR = 3-3 (3-5)"
 def record_result():
