@@ -126,7 +126,7 @@ def save_game_result(team_1, team_2, team_1_score, team_2_score, team_1_penaltie
             print(f"Winner of the {stage} between {team_1} and {team_2} is {game['winner']}")
 
     wf = open('tt.json', 'w')
-    json.dump(tournament, wf)
+    json.dump(tournament, wf, indent=4)
     print("Game result recorded.")
 
 # Record result format "DOR v POR = 3-3 (3-5)"

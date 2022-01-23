@@ -80,9 +80,9 @@
                             "BAY"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "2-8",
                                 "penalties": ""
                             }
                         },
@@ -123,9 +123,9 @@
                             "RMA"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "3-8",
                                 "penalties": ""
                             }
                         },
