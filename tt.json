@@ -227,9 +227,9 @@
                             "MUN"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "3-3",
                                 "penalties": ""
                             }
                         },
@@ -250,9 +250,9 @@
                             "INT"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "6-1",
                                 "penalties": ""
                             }
                         },

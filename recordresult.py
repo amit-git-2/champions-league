@@ -21,7 +21,7 @@ def find_game(t, team_1, team_2):
         return t['Final']['SF2']['QF3']['RS5']['score'], Stages.R16
 
     if team_1 in t['Final']['SF2']['QF3']['RS6']['score']['teams'] and team_2 in t['Final']['SF2']['QF3']['RS6']['score']['teams']:
-        return t['Final']['SF1']['QF3']['RS6']['score'], Stages.R16
+        return t['Final']['SF2']['QF3']['RS6']['score'], Stages.R16
 
     if team_1 in t['Final']['SF2']['QF4']['RS7']['score']['teams'] and team_2 in t['Final']['SF2']['QF4']['RS7']['score']['teams']:
         return t['Final']['SF2']['QF4']['RS7']['score'], Stages.R16
