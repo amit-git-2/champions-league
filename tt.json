@@ -66,9 +66,9 @@
                             "PSG"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "2-6",
                                 "penalties": ""
                             }
                         },
@@ -158,9 +158,9 @@
                             "JUV"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "6-6",
                                 "penalties": ""
                             }
                         },
