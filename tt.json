@@ -19,7 +19,7 @@
                 "winner": "TBD",
                 "teams": [
                     "TBD",
-                    "TBD"
+                    "JUV"
                 ],
                 "L1": {
                     "finished": false,
@@ -44,9 +44,9 @@
                         "BAY"
                     ],
                     "L1": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "2-5",
                             "penalties": ""
                         }
                     },
@@ -107,22 +107,22 @@
             },
             "QF2": {
                 "score": {
-                    "winner": "TBD",
+                    "winner": "JUV",
                     "teams": [
                         "RMA",
                         "JUV"
                     ],
                     "L1": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "3-5",
                             "penalties": ""
                         }
                     },
                     "L2": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "1-6",
                             "penalties": ""
                         }
                     }
@@ -179,7 +179,7 @@
             "score": {
                 "winner": "TBD",
                 "teams": [
-                    "TBD",
+                    "MUN",
                     "TBD"
                 ],
                 "L1": {
@@ -199,22 +199,22 @@
             },
             "QF3": {
                 "score": {
-                    "winner": "TBD",
+                    "winner": "MUN",
                     "teams": [
                         "MUN",
                         "CHE"
                     ],
                     "L1": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "4-3",
                             "penalties": ""
                         }
                     },
                     "L2": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "6-3",
                             "penalties": ""
                         }
                     }
@@ -274,9 +274,9 @@
                         "POR"
                     ],
                     "L1": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "7-6",
                             "penalties": ""
                         }
                     },
