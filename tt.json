@@ -18,7 +18,7 @@
             "score": {
                 "winner": "TBD",
                 "teams": [
-                    "TBD",
+                    "BAY",
                     "JUV"
                 ],
                 "L1": {
@@ -38,7 +38,7 @@
             },
             "QF1": {
                 "score": {
-                    "winner": "TBD",
+                    "winner": "BAY",
                     "teams": [
                         "PSG",
                         "BAY"
@@ -51,9 +51,9 @@
                         }
                     },
                     "L2": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "5-7",
                             "penalties": ""
                         }
                     }
@@ -180,7 +180,7 @@
                 "winner": "TBD",
                 "teams": [
                     "MUN",
-                    "TBD"
+                    "LIV"
                 ],
                 "L1": {
                     "finished": false,
@@ -268,7 +268,7 @@
             },
             "QF4": {
                 "score": {
-                    "winner": "TBD",
+                    "winner": "LIV",
                     "teams": [
                         "LIV",
                         "POR"
@@ -281,9 +281,9 @@
                         }
                     },
                     "L2": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "4-5",
                             "penalties": ""
                         }
                     }
