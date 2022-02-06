@@ -3,8 +3,8 @@
         "score": {
             "winner": "TBD",
             "teams": [
-                "TBD",
-                "TBD"
+                "JUV",
+                "MUN"
             ],
             "L1": {
                 "finished": false,
@@ -16,22 +16,22 @@
         },
         "SF1": {
             "score": {
-                "winner": "TBD",
+                "winner": "JUV",
                 "teams": [
                     "BAY",
                     "JUV"
                 ],
                 "L1": {
-                    "finished": false,
+                    "finished": true,
                     "result": {
-                        "goals": "",
+                        "goals": "3-7",
                         "penalties": ""
                     }
                 },
                 "L2": {
-                    "finished": false,
+                    "finished": true,
                     "result": {
-                        "goals": "",
+                        "goals": "3-0",
                         "penalties": ""
                     }
                 }
@@ -177,22 +177,22 @@
         },
         "SF2": {
             "score": {
-                "winner": "TBD",
+                "winner": "MUN",
                 "teams": [
                     "MUN",
                     "LIV"
                 ],
                 "L1": {
-                    "finished": false,
+                    "finished": true,
                     "result": {
-                        "goals": "",
+                        "goals": "6-2",
                         "penalties": ""
                     }
                 },
                 "L2": {
-                    "finished": false,
+                    "finished": true,
                     "result": {
-                        "goals": "",
+                        "goals": "1-5",
                         "penalties": ""
                     }
                 }

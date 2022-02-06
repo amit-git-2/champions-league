@@ -55,76 +55,65 @@ def find_game(t, team_1, team_2):
     
     return None, None
 
+def update_winner(game, stage):
+    # Find winner
+    team_1 = game['teams'][0]
+    team_2 = game['teams'][1]
+    if stage != Stages.Final and game['L1']['finished'] and game['L2']['finished']:
+        found_winner = True
+        # record the winner
+        goals_l1_t1, goals_l1_t2 = game['L1']['result']['goals'].split('-')
+        goals_l2_t1, goals_l2_t2 = game['L2']['result']['goals'].split('-')
+        team_1_agg_goals = int(goals_l1_t1) + int(goals_l2_t1)
+        team_2_agg_goals = int(goals_l1_t2) + int(goals_l2_t2)
+
+        if team_1_agg_goals == team_2_agg_goals:
+            # check away goals
+            away_goals_t1 = goals_l2_t1
+            away_goals_t2 = goals_l1_t2
+            if away_goals_t1 == away_goals_t2:
+                # check L2 penalties
+                pen_t1, pen_t2 = game['L2']['result']['penalties'].split('-')
+                if pen_t1 > pen_t2:
+                    game['winner'] = team_1
+                else:
+                    game['winner'] = team_2
+            else:
+               if away_goals_t1 > away_goals_t2:
+                    game['winner'] = team_1
+               else:
+                    game['winner'] = team_2
+        else:
+            if team_1_agg_goals > team_2_agg_goals:
+                game['winner'] = team_1
+            else:
+                game['winner'] = team_2
+    else:
+        # check if final, then only check L1 and penalties, if applicable
+        if stage == Stages.Final:
+            found_winner = True
+            goals_t1, goals_t2 = game['L1']['result']['goals'].split('-')
+            if goals_t1 == goals_t2:
+                pen_t1, pen_t2 = game['L1']['result']['penalties'].split('-')
+                if pen_t1 > pen_t2:
+                    game['winner'] = team_1
+                else:
+                    game['winner'] = team_2
+            else:
+                if goals_t1 > goals_t2:
+                    game['winner'] = team_1
+                else:
+                    game['winner'] = team_2
+    if found_winner:
+        print(f"Winner of the {stage} between {team_1} and {team_2} is {game['winner']}")
 
 def save_game_result(team_1, team_2, team_1_score, team_2_score, team_1_penalties=0, team_2_penalties=0):
     f = open('tt.json')
     tournament = json.load(f)
-    found_winner = False
     game, stage = find_game(tournament, team_1, team_2)
     if game is None:
         print(f"Invalid teams {team_1} v {team_2}")
-    else:
-        if not game['L1']['finished']:
-            # record Leg 1 result
-            game['L1']['result']['goals'] = f"{team_1_score}-{team_2_score}"
-            if team_1_score == team_2_score and (team_1_penalties != 0 or team_2_penalties != 0):
-                game['L1']['result']['penalties'] = f"{team_1_penalties}-{team_2_penalties}"
-            game['L1']['finished'] = True
-        else:
-            # record Leg 2 result
-            game['L2']['result']['goals'] = f"{team_1_score}-{team_2_score}"
-            if team_1_score == team_2_score and (team_1_penalties != 0 or team_2_penalties != 0):
-                game['L2']['result']['penalties'] = f"{team_1_penalties}-{team_2_penalties}"
-            game['L2']['finished'] = True
-        
-        # Find winner
-        if game['L1']['finished'] and game['L2']['finished']:
-            found_winner = True
-            # record the winner
-            goals_l1_t1, goals_l1_t2 = game['L1']['result']['goals'].split('-')
-            goals_l2_t1, goals_l2_t2 = game['L2']['result']['goals'].split('-')
-            team_1_agg_goals = goals_l1_t1 + goals_l2_t1
-            team_2_agg_goals = goals_l1_t2 + goals_l2_t2
-            if team_1_agg_goals == team_2_agg_goals:
-                # check away goals
-                away_goals_t1 = goals_l2_t1
-                away_goals_t2 = goals_l1_t2
-                if away_goals_t1 == away_goals_t2:
-                    # check L2 penalties
-                    pen_t1, pen_t2 = game['L2']['result']['penalties'].split('-')
-                    if pen_t1 > pen_t2:
-                        game['winner'] = team_1
-                    else:
-                        game['winner'] = team_2
-                else:
-                    if away_goals_t1 > away_goals_t2:
-                        game['winner'] = team_1
-                    else:
-                        game['winner'] = team_2
-            else:
-                if team_1_agg_goals > team_2_agg_goals:
-                    game['winner'] = team_1
-                else:
-                    game['winner'] = team_2
-        else:
-            # check if final, then only check L1 and penalties, if applicable
-            if stage == Stages.Final:
-                found_winner = True
-                goals_t1, goals_t2 = game['L1']['result']['goals'].split('-')
-                if goals_t1 == goals_t2:
-                    pen_t1, pen_t2 = game['L1']['result']['penalties'].split('-')
-                    if pen_t1 > pen_t2:
-                        game['winner'] = team_1
-                    else:
-                        game['winner'] = team_2
-                else:
-                    if goals_t1 > goals_t2:
-                        game['winner'] = team_1
-                    else:
-                        game['winner'] = team_2
-        if found_winner:
-            print(f"Winner of the {stage} between {team_1} and {team_2} is {game['winner']}")
-    
+    update_winner(game, stage)
     promote_stage_teams(tournament)
 
     wf = open('tt.json', 'w')
