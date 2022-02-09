@@ -1,81 +1,81 @@
 {
     "Final": {
         "score": {
-            "winner": "TBD",
+            "winner": "JUV",
             "teams": [
-                "TBD",
-                "TBD"
+                "JUV",
+                "MUN"
             ],
             "L1": {
-                "finished": false,
+                "finished": true,
                 "result": {
-                    "goals": "",
+                    "goals": "9-4",
                     "penalties": ""
                 }
             }
         },
         "SF1": {
             "score": {
-                "winner": "TBD",
+                "winner": "JUV",
                 "teams": [
-                    "TBD",
-                    "TBD"
+                    "BAY",
+                    "JUV"
                 ],
                 "L1": {
-                    "finished": false,
+                    "finished": true,
                     "result": {
-                        "goals": "",
+                        "goals": "3-7",
                         "penalties": ""
                     }
                 },
                 "L2": {
-                    "finished": false,
+                    "finished": true,
                     "result": {
-                        "goals": "",
+                        "goals": "3-0",
                         "penalties": ""
                     }
                 }
             },
             "QF1": {
                 "score": {
-                    "winner": "TBD",
+                    "winner": "BAY",
                     "teams": [
-                        "TBD",
-                        "TBD"
+                        "PSG",
+                        "BAY"
                     ],
                     "L1": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "2-5",
                             "penalties": ""
                         }
                     },
                     "L2": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "5-7",
                             "penalties": ""
                         }
                     }
                 },
                 "RS1": {
                     "score": {
-                        "winner": "TBD",
+                        "winner": "PSG",
                         "teams": [
-                            "PSG",
-                            "MCI"
+                            "ATM",
+                            "PSG"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "2-6",
                                 "penalties": ""
                             }
                         },
                         "L2": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "3-10",
                                 "penalties": ""
                             }
                         }
@@ -83,22 +83,22 @@
                 },
                 "RS2": {
                     "score": {
-                        "winner": "TBD",
+                        "winner": "BAY",
                         "teams": [
-                            "ATM",
-                            "POR"
+                            "NAP",
+                            "BAY"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "2-8",
                                 "penalties": ""
                             }
                         },
                         "L2": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "6-4",
                                 "penalties": ""
                             }
                         }
@@ -107,44 +107,44 @@
             },
             "QF2": {
                 "score": {
-                    "winner": "TBD",
+                    "winner": "JUV",
                     "teams": [
-                        "TBD",
-                        "TBD"
+                        "RMA",
+                        "JUV"
                     ],
                     "L1": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "3-5",
                             "penalties": ""
                         }
                     },
                     "L2": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "1-6",
                             "penalties": ""
                         }
                     }
                 },
                 "RS3": {
                     "score": {
-                        "winner": "TBD",
+                        "winner": "RMA",
                         "teams": [
-                            "BAY",
-                            "MUN"
+                            "MCI",
+                            "RMA"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "3-8",
                                 "penalties": ""
                             }
                         },
                         "L2": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "3-5",
                                 "penalties": ""
                             }
                         }
@@ -152,22 +152,22 @@
                 },
                 "RS4": {
                     "score": {
-                        "winner": "TBD",
+                        "winner": "JUV",
                         "teams": [
-                            "RMA",
-                            "AJA"
+                            "AJA",
+                            "JUV"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "6-6",
                                 "penalties": ""
                             }
                         },
                         "L2": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "3-4",
                                 "penalties": ""
                             }
                         }
@@ -177,66 +177,66 @@
         },
         "SF2": {
             "score": {
-                "winner": "TBD",
+                "winner": "MUN",
                 "teams": [
-                    "TBD",
-                    "TBD"
+                    "MUN",
+                    "LIV"
                 ],
                 "L1": {
-                    "finished": false,
+                    "finished": true,
                     "result": {
-                        "goals": "",
+                        "goals": "6-2",
                         "penalties": ""
                     }
                 },
                 "L2": {
-                    "finished": false,
+                    "finished": true,
                     "result": {
-                        "goals": "",
+                        "goals": "1-5",
                         "penalties": ""
                     }
                 }
             },
             "QF3": {
                 "score": {
-                    "winner": "TBD",
+                    "winner": "MUN",
                     "teams": [
-                        "TBD",
-                        "TBD"
+                        "MUN",
+                        "CHE"
                     ],
                     "L1": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "4-3",
                             "penalties": ""
                         }
                     },
                     "L2": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "6-3",
                             "penalties": ""
                         }
                     }
                 },
                 "RS5": {
                     "score": {
-                        "winner": "TBD",
+                        "winner": "MUN",
                         "teams": [
-                            "DOR",
-                            "NAP"
+                            "FCB",
+                            "MUN"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "3-3",
                                 "penalties": ""
                             }
                         },
                         "L2": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "3-5",
                                 "penalties": ""
                             }
                         }
@@ -244,22 +244,22 @@
                 },
                 "RS6": {
                     "score": {
-                        "winner": "TBD",
+                        "winner": "CHE",
                         "teams": [
                             "CHE",
-                            "JUV"
+                            "INT"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "6-1",
                                 "penalties": ""
                             }
                         },
                         "L2": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "3-4",
                                 "penalties": ""
                             }
                         }
@@ -268,44 +268,44 @@
             },
             "QF4": {
                 "score": {
-                    "winner": "TBD",
+                    "winner": "LIV",
                     "teams": [
-                        "TBD",
-                        "TBD"
+                        "LIV",
+                        "POR"
                     ],
                     "L1": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "7-6",
                             "penalties": ""
                         }
                     },
                     "L2": {
-                        "finished": false,
+                        "finished": true,
                         "result": {
-                            "goals": "",
+                            "goals": "4-5",
                             "penalties": ""
                         }
                     }
                 },
                 "RS7": {
                     "score": {
-                        "winner": "TBD",
+                        "winner": "LIV",
                         "teams": [
-                            "FCB",
-                            "INT"
+                            "MIL",
+                            "LIV"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "4-4",
                                 "penalties": ""
                             }
                         },
                         "L2": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "3-5",
                                 "penalties": ""
                             }
                         }
@@ -313,22 +313,22 @@
                 },
                 "RS8": {
                     "score": {
-                        "winner": "TBD",
+                        "winner": "POR",
                         "teams": [
-                            "MIL",
-                            "LIV"
+                            "DOR",
+                            "POR"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "3-6",
                                 "penalties": ""
                             }
                         },
                         "L2": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "6-4",
                                 "penalties": ""
                             }
                         }

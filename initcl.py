@@ -55,7 +55,7 @@ def build_leg():
 def build_score(is_final=False):
     score = {}
     score['winner'] = 'TBD'
-    score['teams'] = []
+    score['teams'] = ['TBD','TBD']
 
     if is_final:
         score['L1'] = build_leg()
