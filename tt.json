@@ -1,15 +1,15 @@
 {
     "Final": {
         "score": {
-            "winner": "TBD",
+            "winner": "JUV",
             "teams": [
                 "JUV",
                 "MUN"
             ],
             "L1": {
-                "finished": false,
+                "finished": true,
                 "result": {
-                    "goals": "",
+                    "goals": "9-4",
                     "penalties": ""
                 }
             }

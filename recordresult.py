@@ -113,6 +113,20 @@ def save_game_result(team_1, team_2, team_1_score, team_2_score, team_1_penaltie
     game, stage = find_game(tournament, team_1, team_2)
     if game is None:
         print(f"Invalid teams {team_1} v {team_2}")
+    else:
+        if not game['L1']['finished']:
+            # record Leg 1 result
+            game['L1']['result']['goals'] = f"{team_1_score}-{team_2_score}"
+            if team_1_score == team_2_score and (team_1_penalties != 0 or team_2_penalties != 0):
+                game['L1']['result']['penalties'] = f"{team_1_penalties}-{team_2_penalties}"
+            game['L1']['finished'] = True
+        else:
+            # record Leg 2 result
+            game['L2']['result']['goals'] = f"{team_1_score}-{team_2_score}"
+            if team_1_score == team_2_score and (team_1_penalties != 0 or team_2_penalties != 0):
+                game['L2']['result']['penalties'] = f"{team_1_penalties}-{team_2_penalties}"
+            game['L2']['finished'] = True
+        
     update_winner(game, stage)
     promote_stage_teams(tournament)
 
