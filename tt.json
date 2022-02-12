@@ -66,9 +66,9 @@
                             "MCI"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "2-3",
                                 "penalties": ""
                             }
                         },
@@ -89,9 +89,9 @@
                             "POR"
                         ],
                         "L1": {
-                            "finished": false,
+                            "finished": true,
                             "result": {
-                                "goals": "",
+                                "goals": "2-5",
                                 "penalties": ""
                             }
                         },

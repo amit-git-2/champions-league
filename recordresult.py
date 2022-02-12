@@ -59,6 +59,7 @@ def update_winner(game, stage):
     # Find winner
     team_1 = game['teams'][0]
     team_2 = game['teams'][1]
+    found_winner = False
     if stage != Stages.Final and game['L1']['finished'] and game['L2']['finished']:
         found_winner = True
         # record the winner
